@@ -25,6 +25,7 @@ function setup() {
 function draw() {
 	//adding draw makes it so that the background is repeated (symbol doesnt repeat down screen)
 	//adding 150 opacity to background for glow effect
+	//adding else if to background to make stormy effect with different colors
 	if (frameCount % 2 === 0) {
 		background('rgba(0,255,0, 0.25)');
 	} else if (frameCount % 125 === 0) {
