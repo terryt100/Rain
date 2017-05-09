@@ -25,7 +25,11 @@ function setup() {
 function draw() {
 	//adding draw makes it so that the background is repeated (symbol doesnt repeat down screen)
 	//adding 150 opacity to background for glow effect
-	background(0, 150);
+	if (frameCount % 2 === 0) {
+		background('rgba(0,255,0, 0.25)');
+	} else {
+		background('rgba(255,255,0, 0.25)');
+	}
 	// creating and rendering stream
 	streams.forEach(function(stream) {
 		stream.render();
@@ -105,7 +109,7 @@ function Stream() {
 			if (symbol.first) {
 				fill(180, 255, 180);
 			} else {
-			fill(0, 255, 70);
+			fill(0);
 		}
 			text(symbol.value, symbol.x, symbol.y);
 			symbol.rain();
