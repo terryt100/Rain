@@ -27,6 +27,8 @@ function draw() {
 	//adding 150 opacity to background for glow effect
 	if (frameCount % 2 === 0) {
 		background('rgba(0,255,0, 0.25)');
+	} else if (frameCount % 125 === 0) {
+		background(0,150);
 	} else {
 		background('rgba(255,255,0, 0.25)');
 	}
