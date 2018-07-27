@@ -2,6 +2,8 @@
 var symbolSize = 15;
 var streams = [];
 
+//adding gradient changes
+
 //setup makes the canvas for sketch area, making it for whole page
 function setup() {
 	createCanvas(
